@@ -1,0 +1,40 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Module" />
+<f:section name="Content">
+    <h1><f:translate key="LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf:mlang_tabs_tab" /></h1>
+
+    <f:if condition="{flatDependencies}">
+        <f:then>
+            <div class="alert alert-info">
+                Found {flatDependencies -> f:count()} dependencies.
+            </div>
+            <div class="table-fit">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Version</th>
+                            <th>Origin</th>
+                        </tr>
+                    </thead>
+                    <f:for each="{flatDependencies}" as="dependency">
+                        <tr>
+                            <td>{dependency.name}</td>
+                            <td>{dependency.version}</td>
+                            <td>{dependency.origin}</td>
+                        </tr>
+                    </f:for>
+                </table>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="alert alert-warning">No dependencies could be resolved.</div>
+        </f:else>
+    </f:if>
+</f:section>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "sbominator/sbom-typo3",
+  "description": "TYPO3 integration of generating SBOM using sbominator/sbom-lib",
+  "license": "MIT",
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "Oliver Hader",
+      "email": "oliver@typo3.org"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "13.4.x@dev || 14.x@dev",
+    "sbominator/sbom-lib": "@dev"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "sbom_typo3"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "\\SBOMinator\\SbomTYPO3\\": "Classes/"
+    }
+  }
+}
