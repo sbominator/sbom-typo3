@@ -41,7 +41,7 @@ final readonly class ModuleController
                 ->setTitle(LocalizationUtility::translate('LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf:action.download.SPDX', 'sbom_typo3'))
                 ->setShowLabelText(true)
                 ->setHref((string)$this->uriBuilder->buildUriFromRoute('sbom_download', [
-                    'format' => FileType::SPDX_SBOM_FILE,
+                    'format' => FileType::SPDX_SBOM_FILE->value,
                 ])),
             ButtonBar::BUTTON_POSITION_LEFT,
             1
@@ -53,7 +53,7 @@ final readonly class ModuleController
                 ->setTitle(LocalizationUtility::translate('LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf:action.download.cycloneDX', 'sbom_typo3'))
                 ->setShowLabelText(true)
                 ->setHref((string)$this->uriBuilder->buildUriFromRoute('sbom_download', [
-                    'format' => FileType::CYCLONEDX_SBOM_FILE,
+                    'format' => FileType::CYCLONEDX_SBOM_FILE->value,
                 ])),
             ButtonBar::BUTTON_POSITION_LEFT,
             2

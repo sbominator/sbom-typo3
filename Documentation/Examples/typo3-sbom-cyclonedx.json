@@ -1,3327 +1,999 @@
 {
-    "spdxVersion": "SPDX-2.2",
-    "dataLicense": "CC0-1.0",
-    "SPDXID": "SPDXRef-DOCUMENT",
-    "name": "SBOM",
-    "creationInfo": {
-        "creators": [
-            "Tool: SBOMinator"
-        ],
-        "created": "2025-03-17T10:38:40+01:00"
-    },
-    "packages": [
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "version": 1,
+    "components": [
         {
-            "SPDXID": "SPDXRef-sbominator-sbom-typo3|dev-main",
+            "bom-ref": "sbominator\/sbom-typo3|dev-main",
+            "type": "library",
             "name": "sbominator\/sbom-typo3",
-            "versionInfo": "dev-main",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "dev-main",
+            "purl": "pkg:composer\/sbominator\/sbom-typo3@dev-main"
         },
         {
-            "SPDXID": "SPDXRef-sbominator-sbom-lib|dev-main",
+            "bom-ref": "sbominator\/sbom-lib|dev-main",
+            "type": "library",
             "name": "sbominator\/sbom-lib",
-            "versionInfo": "dev-main",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "dev-main",
+            "purl": "pkg:composer\/sbominator\/sbom-lib@dev-main"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-core|v13.4.7",
+            "bom-ref": "typo3\/cms-core|v13.4.7",
+            "type": "library",
             "name": "typo3\/cms-core",
-            "versionInfo": "v13.4.7",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.7",
+            "purl": "pkg:composer\/typo3\/cms-core@v13.4.7"
         },
         {
-            "SPDXID": "SPDXRef-bacon-bacon-qr-code|v3.0.1",
+            "bom-ref": "bacon\/bacon-qr-code|v3.0.1",
+            "type": "library",
             "name": "bacon\/bacon-qr-code",
-            "versionInfo": "v3.0.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v3.0.1",
+            "purl": "pkg:composer\/bacon\/bacon-qr-code@v3.0.1"
         },
         {
-            "SPDXID": "SPDXRef-dasprid-enum|1.0.6",
+            "bom-ref": "dasprid\/enum|1.0.6",
+            "type": "library",
             "name": "dasprid\/enum",
-            "versionInfo": "1.0.6",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.0.6",
+            "purl": "pkg:composer\/dasprid\/enum@1.0.6"
         },
         {
-            "SPDXID": "SPDXRef-christian-riesen-base32|1.6.0",
+            "bom-ref": "christian-riesen\/base32|1.6.0",
+            "type": "library",
             "name": "christian-riesen\/base32",
-            "versionInfo": "1.6.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.6.0",
+            "purl": "pkg:composer\/christian-riesen\/base32@1.6.0"
         },
         {
-            "SPDXID": "SPDXRef-doctrine-annotations|2.0.2",
+            "bom-ref": "doctrine\/annotations|2.0.2",
+            "type": "library",
             "name": "doctrine\/annotations",
-            "versionInfo": "2.0.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.0.2",
+            "purl": "pkg:composer\/doctrine\/annotations@2.0.2"
         },
         {
-            "SPDXID": "SPDXRef-doctrine-lexer|3.0.1",
+            "bom-ref": "doctrine\/lexer|3.0.1",
+            "type": "library",
             "name": "doctrine\/lexer",
-            "versionInfo": "3.0.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "3.0.1",
+            "purl": "pkg:composer\/doctrine\/lexer@3.0.1"
         },
         {
-            "SPDXID": "SPDXRef-psr-cache|3.0.0",
+            "bom-ref": "psr\/cache|3.0.0",
+            "type": "library",
             "name": "psr\/cache",
-            "versionInfo": "3.0.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "3.0.0",
+            "purl": "pkg:composer\/psr\/cache@3.0.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-cache|v7.2.4",
+            "bom-ref": "symfony\/cache|v7.2.4",
+            "type": "library",
             "name": "symfony\/cache",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/cache@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-psr-log|3.0.2",
+            "bom-ref": "psr\/log|3.0.2",
+            "type": "library",
             "name": "psr\/log",
-            "versionInfo": "3.0.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "3.0.2",
+            "purl": "pkg:composer\/psr\/log@3.0.2"
         },
         {
-            "SPDXID": "SPDXRef-symfony-cache-contracts|v3.5.1",
+            "bom-ref": "symfony\/cache-contracts|v3.5.1",
+            "type": "library",
             "name": "symfony\/cache-contracts",
-            "versionInfo": "v3.5.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v3.5.1",
+            "purl": "pkg:composer\/symfony\/cache-contracts@v3.5.1"
         },
         {
-            "SPDXID": "SPDXRef-symfony-deprecation-contracts|v3.5.1",
+            "bom-ref": "symfony\/deprecation-contracts|v3.5.1",
+            "type": "library",
             "name": "symfony\/deprecation-contracts",
-            "versionInfo": "v3.5.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v3.5.1",
+            "purl": "pkg:composer\/symfony\/deprecation-contracts@v3.5.1"
         },
         {
-            "SPDXID": "SPDXRef-symfony-service-contracts|v3.5.1",
+            "bom-ref": "symfony\/service-contracts|v3.5.1",
+            "type": "library",
             "name": "symfony\/service-contracts",
-            "versionInfo": "v3.5.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v3.5.1",
+            "purl": "pkg:composer\/symfony\/service-contracts@v3.5.1"
         },
         {
-            "SPDXID": "SPDXRef-psr-container|2.0.2",
+            "bom-ref": "psr\/container|2.0.2",
+            "type": "library",
             "name": "psr\/container",
-            "versionInfo": "2.0.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.0.2",
+            "purl": "pkg:composer\/psr\/container@2.0.2"
         },
         {
-            "SPDXID": "SPDXRef-symfony-var-exporter|v7.2.4",
+            "bom-ref": "symfony\/var-exporter|v7.2.4",
+            "type": "library",
             "name": "symfony\/var-exporter",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/var-exporter@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-symfony-property-access|v7.2.3",
+            "bom-ref": "symfony\/property-access|v7.2.3",
+            "type": "library",
             "name": "symfony\/property-access",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/property-access@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-property-info|v7.2.3",
+            "bom-ref": "symfony\/property-info|v7.2.3",
+            "type": "library",
             "name": "symfony\/property-info",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/property-info@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-string|v7.2.0",
+            "bom-ref": "symfony\/string|v7.2.0",
+            "type": "library",
             "name": "symfony\/string",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/string@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-ctype|v1.31.0",
+            "bom-ref": "symfony\/polyfill-ctype|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-ctype",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-ctype@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0",
+            "bom-ref": "symfony\/polyfill-intl-grapheme|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-intl-grapheme",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-intl-grapheme@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0",
+            "bom-ref": "symfony\/polyfill-intl-normalizer|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-intl-normalizer",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-intl-normalizer@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-mbstring|v1.31.0",
+            "bom-ref": "symfony\/polyfill-mbstring|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-mbstring",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-mbstring@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-type-info|v7.2.4",
+            "bom-ref": "symfony\/type-info|v7.2.4",
+            "type": "library",
             "name": "symfony\/type-info",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/type-info@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
+            "bom-ref": "phpstan\/phpdoc-parser|1.33.0",
+            "type": "library",
             "name": "phpstan\/phpdoc-parser",
-            "versionInfo": "1.33.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.33.0",
+            "purl": "pkg:composer\/phpstan\/phpdoc-parser@1.33.0"
         },
         {
-            "SPDXID": "SPDXRef-nikic-php-parser|v5.4.0",
+            "bom-ref": "nikic\/php-parser|v5.4.0",
+            "type": "library",
             "name": "nikic\/php-parser",
-            "versionInfo": "v5.4.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v5.4.0",
+            "purl": "pkg:composer\/nikic\/php-parser@v5.4.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-process|v7.2.4",
+            "bom-ref": "symfony\/process|v7.2.4",
+            "type": "library",
             "name": "symfony\/process",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/process@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
+            "bom-ref": "phpdocumentor\/reflection-docblock|5.6.1",
+            "type": "library",
             "name": "phpdocumentor\/reflection-docblock",
-            "versionInfo": "5.6.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "5.6.1",
+            "purl": "pkg:composer\/phpdocumentor\/reflection-docblock@5.6.1"
         },
         {
-            "SPDXID": "SPDXRef-doctrine-deprecations|1.1.4",
+            "bom-ref": "doctrine\/deprecations|1.1.4",
+            "type": "library",
             "name": "doctrine\/deprecations",
-            "versionInfo": "1.1.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.1.4",
+            "purl": "pkg:composer\/doctrine\/deprecations@1.1.4"
         },
         {
-            "SPDXID": "SPDXRef-phpdocumentor-reflection-common|2.2.0",
+            "bom-ref": "phpdocumentor\/reflection-common|2.2.0",
+            "type": "library",
             "name": "phpdocumentor\/reflection-common",
-            "versionInfo": "2.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.2.0",
+            "purl": "pkg:composer\/phpdocumentor\/reflection-common@2.2.0"
         },
         {
-            "SPDXID": "SPDXRef-phpdocumentor-type-resolver|1.10.0",
+            "bom-ref": "phpdocumentor\/type-resolver|1.10.0",
+            "type": "library",
             "name": "phpdocumentor\/type-resolver",
-            "versionInfo": "1.10.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.10.0",
+            "purl": "pkg:composer\/phpdocumentor\/type-resolver@1.10.0"
         },
         {
-            "SPDXID": "SPDXRef-webmozart-assert|1.11.0",
+            "bom-ref": "webmozart\/assert|1.11.0",
+            "type": "library",
             "name": "webmozart\/assert",
-            "versionInfo": "1.11.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.11.0",
+            "purl": "pkg:composer\/webmozart\/assert@1.11.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-dependency-injection|v7.2.4",
+            "bom-ref": "symfony\/dependency-injection|v7.2.4",
+            "type": "library",
             "name": "symfony\/dependency-injection",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/dependency-injection@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-symfony-config|v7.2.3",
+            "bom-ref": "symfony\/config|v7.2.3",
+            "type": "library",
             "name": "symfony\/config",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/config@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-filesystem|v7.2.0",
+            "bom-ref": "symfony\/filesystem|v7.2.0",
+            "type": "library",
             "name": "symfony\/filesystem",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/filesystem@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-event-dispatcher|v7.2.0",
+            "bom-ref": "symfony\/event-dispatcher|v7.2.0",
+            "type": "library",
             "name": "symfony\/event-dispatcher",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/event-dispatcher@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
+            "bom-ref": "symfony\/event-dispatcher-contracts|v3.5.1",
+            "type": "library",
             "name": "symfony\/event-dispatcher-contracts",
-            "versionInfo": "v3.5.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v3.5.1",
+            "purl": "pkg:composer\/symfony\/event-dispatcher-contracts@v3.5.1"
         },
         {
-            "SPDXID": "SPDXRef-psr-event-dispatcher|1.0.0",
+            "bom-ref": "psr\/event-dispatcher|1.0.0",
+            "type": "library",
             "name": "psr\/event-dispatcher",
-            "versionInfo": "1.0.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.0.0",
+            "purl": "pkg:composer\/psr\/event-dispatcher@1.0.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-expression-language|v7.2.0",
+            "bom-ref": "symfony\/expression-language|v7.2.0",
+            "type": "library",
             "name": "symfony\/expression-language",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/expression-language@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-http-foundation|v7.2.3",
+            "bom-ref": "symfony\/http-foundation|v7.2.3",
+            "type": "library",
             "name": "symfony\/http-foundation",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/http-foundation@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-php83|v1.31.0",
+            "bom-ref": "symfony\/polyfill-php83|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-php83",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-php83@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-doctrine-dbal|4.2.3",
+            "bom-ref": "doctrine\/dbal|4.2.3",
+            "type": "library",
             "name": "doctrine\/dbal",
-            "versionInfo": "4.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "4.2.3",
+            "purl": "pkg:composer\/doctrine\/dbal@4.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-console|v7.2.1",
+            "bom-ref": "symfony\/console|v7.2.1",
+            "type": "library",
             "name": "symfony\/console",
-            "versionInfo": "v7.2.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.1",
+            "purl": "pkg:composer\/symfony\/console@v7.2.1"
         },
         {
-            "SPDXID": "SPDXRef-symfony-messenger|v7.2.4",
+            "bom-ref": "symfony\/messenger|v7.2.4",
+            "type": "library",
             "name": "symfony\/messenger",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/messenger@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-symfony-clock|v7.2.0",
+            "bom-ref": "symfony\/clock|v7.2.0",
+            "type": "library",
             "name": "symfony\/clock",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/clock@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-psr-clock|1.0.0",
+            "bom-ref": "psr\/clock|1.0.0",
+            "type": "library",
             "name": "psr\/clock",
-            "versionInfo": "1.0.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.0.0",
+            "purl": "pkg:composer\/psr\/clock@1.0.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-rate-limiter|v7.2.0",
+            "bom-ref": "symfony\/rate-limiter|v7.2.0",
+            "type": "library",
             "name": "symfony\/rate-limiter",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/rate-limiter@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-options-resolver|v7.2.0",
+            "bom-ref": "symfony\/options-resolver|v7.2.0",
+            "type": "library",
             "name": "symfony\/options-resolver",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/options-resolver@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-routing|v7.2.3",
+            "bom-ref": "symfony\/routing|v7.2.3",
+            "type": "library",
             "name": "symfony\/routing",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/routing@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-yaml|v7.2.3",
+            "bom-ref": "symfony\/yaml|v7.2.3",
+            "type": "library",
             "name": "symfony\/yaml",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/yaml@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-mime|v7.2.4",
+            "bom-ref": "symfony\/mime|v7.2.4",
+            "type": "library",
             "name": "symfony\/mime",
-            "versionInfo": "v7.2.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.4",
+            "purl": "pkg:composer\/symfony\/mime@v7.2.4"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0",
+            "bom-ref": "symfony\/polyfill-intl-idn|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-intl-idn",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-intl-idn@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-egulias-email-validator|4.0.3",
+            "bom-ref": "egulias\/email-validator|4.0.3",
+            "type": "library",
             "name": "egulias\/email-validator",
-            "versionInfo": "4.0.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "4.0.3",
+            "purl": "pkg:composer\/egulias\/email-validator@4.0.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-finder|v7.2.2",
+            "bom-ref": "symfony\/finder|v7.2.2",
+            "type": "library",
             "name": "symfony\/finder",
-            "versionInfo": "v7.2.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.2",
+            "purl": "pkg:composer\/symfony\/finder@v7.2.2"
         },
         {
-            "SPDXID": "SPDXRef-doctrine-event-manager|2.0.1",
+            "bom-ref": "doctrine\/event-manager|2.0.1",
+            "type": "library",
             "name": "doctrine\/event-manager",
-            "versionInfo": "2.0.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.0.1",
+            "purl": "pkg:composer\/doctrine\/event-manager@2.0.1"
         },
         {
-            "SPDXID": "SPDXRef-enshrined-svg-sanitize|0.20.0",
+            "bom-ref": "enshrined\/svg-sanitize|0.20.0",
+            "type": "library",
             "name": "enshrined\/svg-sanitize",
-            "versionInfo": "0.20.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "0.20.0",
+            "purl": "pkg:composer\/enshrined\/svg-sanitize@0.20.0"
         },
         {
-            "SPDXID": "SPDXRef-firebase-php-jwt|v6.11.0",
+            "bom-ref": "firebase\/php-jwt|v6.11.0",
+            "type": "library",
             "name": "firebase\/php-jwt",
-            "versionInfo": "v6.11.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v6.11.0",
+            "purl": "pkg:composer\/firebase\/php-jwt@v6.11.0"
         },
         {
-            "SPDXID": "SPDXRef-guzzlehttp-guzzle|7.9.2",
+            "bom-ref": "guzzlehttp\/guzzle|7.9.2",
+            "type": "library",
             "name": "guzzlehttp\/guzzle",
-            "versionInfo": "7.9.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "7.9.2",
+            "purl": "pkg:composer\/guzzlehttp\/guzzle@7.9.2"
         },
         {
-            "SPDXID": "SPDXRef-guzzlehttp-promises|2.0.4",
+            "bom-ref": "guzzlehttp\/promises|2.0.4",
+            "type": "library",
             "name": "guzzlehttp\/promises",
-            "versionInfo": "2.0.4",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.0.4",
+            "purl": "pkg:composer\/guzzlehttp\/promises@2.0.4"
         },
         {
-            "SPDXID": "SPDXRef-guzzlehttp-psr7|2.7.0",
+            "bom-ref": "guzzlehttp\/psr7|2.7.0",
+            "type": "library",
             "name": "guzzlehttp\/psr7",
-            "versionInfo": "2.7.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.7.0",
+            "purl": "pkg:composer\/guzzlehttp\/psr7@2.7.0"
         },
         {
-            "SPDXID": "SPDXRef-psr-http-factory|1.1.0",
+            "bom-ref": "psr\/http-factory|1.1.0",
+            "type": "library",
             "name": "psr\/http-factory",
-            "versionInfo": "1.1.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.1.0",
+            "purl": "pkg:composer\/psr\/http-factory@1.1.0"
         },
         {
-            "SPDXID": "SPDXRef-psr-http-message|2.0",
+            "bom-ref": "psr\/http-message|2.0",
+            "type": "library",
             "name": "psr\/http-message",
-            "versionInfo": "2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.0",
+            "purl": "pkg:composer\/psr\/http-message@2.0"
         },
         {
-            "SPDXID": "SPDXRef-ralouphie-getallheaders|3.0.3",
+            "bom-ref": "ralouphie\/getallheaders|3.0.3",
+            "type": "library",
             "name": "ralouphie\/getallheaders",
-            "versionInfo": "3.0.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "3.0.3",
+            "purl": "pkg:composer\/ralouphie\/getallheaders@3.0.3"
         },
         {
-            "SPDXID": "SPDXRef-psr-http-client|1.0.3",
+            "bom-ref": "psr\/http-client|1.0.3",
+            "type": "library",
             "name": "psr\/http-client",
-            "versionInfo": "1.0.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.0.3",
+            "purl": "pkg:composer\/psr\/http-client@1.0.3"
         },
         {
-            "SPDXID": "SPDXRef-lolli42-finediff|1.1.1",
+            "bom-ref": "lolli42\/finediff|1.1.1",
+            "type": "library",
             "name": "lolli42\/finediff",
-            "versionInfo": "1.1.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.1.1",
+            "purl": "pkg:composer\/lolli42\/finediff@1.1.1"
         },
         {
-            "SPDXID": "SPDXRef-masterminds-html5|2.9.0",
+            "bom-ref": "masterminds\/html5|2.9.0",
+            "type": "library",
             "name": "masterminds\/html5",
-            "versionInfo": "2.9.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.9.0",
+            "purl": "pkg:composer\/masterminds\/html5@2.9.0"
         },
         {
-            "SPDXID": "SPDXRef-psr-http-server-handler|1.0.2",
+            "bom-ref": "psr\/http-server-handler|1.0.2",
+            "type": "library",
             "name": "psr\/http-server-handler",
-            "versionInfo": "1.0.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.0.2",
+            "purl": "pkg:composer\/psr\/http-server-handler@1.0.2"
         },
         {
-            "SPDXID": "SPDXRef-psr-http-server-middleware|1.0.2",
+            "bom-ref": "psr\/http-server-middleware|1.0.2",
+            "type": "library",
             "name": "psr\/http-server-middleware",
-            "versionInfo": "1.0.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "1.0.2",
+            "purl": "pkg:composer\/psr\/http-server-middleware@1.0.2"
         },
         {
-            "SPDXID": "SPDXRef-symfony-doctrine-messenger|v7.2.3",
+            "bom-ref": "symfony\/doctrine-messenger|v7.2.3",
+            "type": "library",
             "name": "symfony\/doctrine-messenger",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/doctrine-messenger@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-mailer|v7.2.3",
+            "bom-ref": "symfony\/mailer|v7.2.3",
+            "type": "library",
             "name": "symfony\/mailer",
-            "versionInfo": "v7.2.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.3",
+            "purl": "pkg:composer\/symfony\/mailer@v7.2.3"
         },
         {
-            "SPDXID": "SPDXRef-symfony-uid|v7.2.0",
+            "bom-ref": "symfony\/uid|v7.2.0",
+            "type": "library",
             "name": "symfony\/uid",
-            "versionInfo": "v7.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v7.2.0",
+            "purl": "pkg:composer\/symfony\/uid@v7.2.0"
         },
         {
-            "SPDXID": "SPDXRef-symfony-polyfill-uuid|v1.31.0",
+            "bom-ref": "symfony\/polyfill-uuid|v1.31.0",
+            "type": "library",
             "name": "symfony\/polyfill-uuid",
-            "versionInfo": "v1.31.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.31.0",
+            "purl": "pkg:composer\/symfony\/polyfill-uuid@v1.31.0"
         },
         {
-            "SPDXID": "SPDXRef-typo3-class-alias-loader|v1.2.0",
+            "bom-ref": "typo3\/class-alias-loader|v1.2.0",
+            "type": "library",
             "name": "typo3\/class-alias-loader",
-            "versionInfo": "v1.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.2.0",
+            "purl": "pkg:composer\/typo3\/class-alias-loader@v1.2.0"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-cli|3.1.2",
+            "bom-ref": "typo3\/cms-cli|3.1.2",
+            "type": "library",
             "name": "typo3\/cms-cli",
-            "versionInfo": "3.1.2",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "3.1.2",
+            "purl": "pkg:composer\/typo3\/cms-cli@3.1.2"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-composer-installers|v5.0.1",
+            "bom-ref": "typo3\/cms-composer-installers|v5.0.1",
+            "type": "library",
             "name": "typo3\/cms-composer-installers",
-            "versionInfo": "v5.0.1",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v5.0.1",
+            "purl": "pkg:composer\/typo3\/cms-composer-installers@v5.0.1"
         },
         {
-            "SPDXID": "SPDXRef-typo3-html-sanitizer|v2.2.0",
+            "bom-ref": "typo3\/html-sanitizer|v2.2.0",
+            "type": "library",
             "name": "typo3\/html-sanitizer",
-            "versionInfo": "v2.2.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v2.2.0",
+            "purl": "pkg:composer\/typo3\/html-sanitizer@v2.2.0"
         },
         {
-            "SPDXID": "SPDXRef-typo3fluid-fluid|4.0.3",
+            "bom-ref": "typo3fluid\/fluid|4.0.3",
+            "type": "library",
             "name": "typo3fluid\/fluid",
-            "versionInfo": "4.0.3",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "4.0.3",
+            "purl": "pkg:composer\/typo3fluid\/fluid@4.0.3"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-dashboard|13.4.x-dev",
+            "bom-ref": "typo3\/cms-dashboard|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-dashboard",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-dashboard@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-backend|13.4.x-dev",
+            "bom-ref": "typo3\/cms-backend|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-backend",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-backend@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-extbase|v13.4.7",
+            "bom-ref": "typo3\/cms-extbase|v13.4.7",
+            "type": "library",
             "name": "typo3\/cms-extbase",
-            "versionInfo": "v13.4.7",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.7",
+            "purl": "pkg:composer\/typo3\/cms-extbase@v13.4.7"
         },
         {
-            "SPDXID": "SPDXRef-doctrine-instantiator|2.0.0",
+            "bom-ref": "doctrine\/instantiator|2.0.0",
+            "type": "library",
             "name": "doctrine\/instantiator",
-            "versionInfo": "2.0.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "2.0.0",
+            "purl": "pkg:composer\/doctrine\/instantiator@2.0.0"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-fluid|13.4.x-dev",
+            "bom-ref": "typo3\/cms-fluid|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-fluid",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-fluid@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-frontend|v13.4.7",
+            "bom-ref": "typo3\/cms-frontend|v13.4.7",
+            "type": "library",
             "name": "typo3\/cms-frontend",
-            "versionInfo": "v13.4.7",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.7",
+            "purl": "pkg:composer\/typo3\/cms-frontend@v13.4.7"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-fluid-styled-content|13.4.x-dev",
+            "bom-ref": "typo3\/cms-fluid-styled-content|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-fluid-styled-content",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-fluid-styled-content@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-introduction|4.7.0",
+            "bom-ref": "typo3\/cms-introduction|4.7.0",
+            "type": "library",
             "name": "typo3\/cms-introduction",
-            "versionInfo": "4.7.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "4.7.0",
+            "purl": "pkg:composer\/typo3\/cms-introduction@4.7.0"
         },
         {
-            "SPDXID": "SPDXRef-bk2k-bootstrap-package|15.0.0",
+            "bom-ref": "bk2k\/bootstrap-package|15.0.0",
+            "type": "library",
             "name": "bk2k\/bootstrap-package",
-            "versionInfo": "15.0.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "15.0.0",
+            "purl": "pkg:composer\/bk2k\/bootstrap-package@15.0.0"
         },
         {
-            "SPDXID": "SPDXRef-scssphp-scssphp|v1.13.0",
+            "bom-ref": "scssphp\/scssphp|v1.13.0",
+            "type": "library",
             "name": "scssphp\/scssphp",
-            "versionInfo": "v1.13.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v1.13.0",
+            "purl": "pkg:composer\/scssphp\/scssphp@v1.13.0"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-extensionmanager|13.4.x-dev",
+            "bom-ref": "typo3\/cms-extensionmanager|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-extensionmanager",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-extensionmanager@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-install|13.4.x-dev",
+            "bom-ref": "typo3\/cms-install|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-install",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-install@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-rte-ckeditor|13.4.x-dev",
+            "bom-ref": "typo3\/cms-rte-ckeditor|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-rte-ckeditor",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-rte-ckeditor@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-seo|v13.4.7",
+            "bom-ref": "typo3\/cms-seo|v13.4.7",
+            "type": "library",
             "name": "typo3\/cms-seo",
-            "versionInfo": "v13.4.7",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.7",
+            "purl": "pkg:composer\/typo3\/cms-seo@v13.4.7"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-belog|13.4.x-dev",
+            "bom-ref": "typo3\/cms-belog|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-belog",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-belog@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-felogin|13.4.x-dev",
+            "bom-ref": "typo3\/cms-felogin|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-felogin",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-felogin@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-filelist|13.4.x-dev",
+            "bom-ref": "typo3\/cms-filelist|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-filelist",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-filelist@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-form|13.4.x-dev",
+            "bom-ref": "typo3\/cms-form|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-form",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-form@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-indexed-search|13.4.x-dev",
+            "bom-ref": "typo3\/cms-indexed-search|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-indexed-search",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-indexed-search@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-tstemplate|13.4.x-dev",
+            "bom-ref": "typo3\/cms-tstemplate|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-tstemplate",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-tstemplate@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-beuser|13.4.x-dev",
+            "bom-ref": "typo3\/cms-beuser|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-beuser",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-beuser@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-filemetadata|v13.4.7",
+            "bom-ref": "typo3\/cms-filemetadata|v13.4.7",
+            "type": "library",
             "name": "typo3\/cms-filemetadata",
-            "versionInfo": "v13.4.7",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.7",
+            "purl": "pkg:composer\/typo3\/cms-filemetadata@v13.4.7"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-impexp|v13.4.7",
+            "bom-ref": "typo3\/cms-impexp|v13.4.7",
+            "type": "library",
             "name": "typo3\/cms-impexp",
-            "versionInfo": "v13.4.7",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.7",
+            "purl": "pkg:composer\/typo3\/cms-impexp@v13.4.7"
         },
         {
-            "SPDXID": "SPDXRef-typo3-minimal|v13.4.0",
+            "bom-ref": "typo3\/minimal|v13.4.0",
+            "type": "library",
             "name": "typo3\/minimal",
-            "versionInfo": "v13.4.0",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "v13.4.0",
+            "purl": "pkg:composer\/typo3\/minimal@v13.4.0"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-scheduler|13.4.x-dev",
+            "bom-ref": "typo3\/cms-scheduler|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-scheduler",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-scheduler@13.4.x-dev"
         },
         {
-            "SPDXID": "SPDXRef-typo3-cms-setup|13.4.x-dev",
+            "bom-ref": "typo3\/cms-setup|13.4.x-dev",
+            "type": "library",
             "name": "typo3\/cms-setup",
-            "versionInfo": "13.4.x-dev",
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": false
+            "version": "13.4.x-dev",
+            "purl": "pkg:composer\/typo3\/cms-setup@13.4.x-dev"
         }
     ],
-    "relationships": [
+    "dependencies": [
         {
-            "spdxElementId": "SPDXRef-sbominator-sbom-typo3|dev-main",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-sbominator-sbom-lib|dev-main"
+            "ref": "bacon\/bacon-qr-code|v3.0.1",
+            "dependsOn": [
+                "dasprid\/enum|1.0.6"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-sbominator-sbom-typo3|dev-main",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-core|v13.4.7"
+            "ref": "symfony\/service-contracts|v3.5.1",
+            "dependsOn": [
+                "psr\/container|2.0.2"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-bacon-bacon-qr-code|v3.0.1"
+            "ref": "symfony\/string|v7.2.0",
+            "dependsOn": [
+                "symfony\/polyfill-ctype|v1.31.0",
+                "symfony\/polyfill-intl-grapheme|v1.31.0",
+                "symfony\/polyfill-intl-normalizer|v1.31.0",
+                "symfony\/polyfill-mbstring|v1.31.0"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-bacon-bacon-qr-code|v3.0.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-dasprid-enum|1.0.6"
+            "ref": "phpstan\/phpdoc-parser|1.33.0",
+            "dependsOn": [
+                "nikic\/php-parser|v5.4.0",
+                "symfony\/process|v7.2.4"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-christian-riesen-base32|1.6.0"
+            "ref": "symfony\/type-info|v7.2.4",
+            "dependsOn": [
+                "phpstan\/phpdoc-parser|1.33.0"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-annotations|2.0.2"
+            "ref": "phpdocumentor\/reflection-docblock|5.6.1",
+            "dependsOn": [
+                "doctrine\/deprecations|1.1.4",
+                "phpdocumentor\/reflection-common|2.2.0",
+                "phpdocumentor\/type-resolver|1.10.0",
+                "webmozart\/assert|1.11.0"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-lexer|3.0.1"
+            "ref": "symfony\/event-dispatcher-contracts|v3.5.1",
+            "dependsOn": [
+                "psr\/event-dispatcher|1.0.0"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-cache|3.0.0"
+            "ref": "symfony\/clock|v7.2.0",
+            "dependsOn": [
+                "psr\/clock|1.0.0"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache|v7.2.4"
+            "ref": "symfony\/rate-limiter|v7.2.0",
+            "dependsOn": [
+                "symfony\/options-resolver|v7.2.0"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-log|3.0.2"
+            "ref": "symfony\/routing|v7.2.3",
+            "dependsOn": [
+                "symfony\/yaml|v7.2.3"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache-contracts|v3.5.1"
+            "ref": "symfony\/messenger|v7.2.4",
+            "dependsOn": [
+                "symfony\/clock|v7.2.0",
+                "symfony\/rate-limiter|v7.2.0",
+                "symfony\/routing|v7.2.3"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-deprecation-contracts|v3.5.1"
+            "ref": "symfony\/console|v7.2.1",
+            "dependsOn": [
+                "symfony\/messenger|v7.2.4"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-service-contracts|v3.5.1"
+            "ref": "doctrine\/dbal|4.2.3",
+            "dependsOn": [
+                "symfony\/console|v7.2.1"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-service-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-container|2.0.2"
+            "ref": "symfony\/mime|v7.2.4",
+            "dependsOn": [
+                "symfony\/polyfill-intl-idn|v1.31.0",
+                "egulias\/email-validator|4.0.3"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-var-exporter|v7.2.4"
+            "ref": "symfony\/http-foundation|v7.2.3",
+            "dependsOn": [
+                "symfony\/polyfill-php83|v1.31.0",
+                "doctrine\/dbal|4.2.3",
+                "symfony\/mime|v7.2.4"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-var-exporter|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-access|v7.2.3"
+            "ref": "symfony\/event-dispatcher|v7.2.0",
+            "dependsOn": [
+                "symfony\/event-dispatcher-contracts|v3.5.1",
+                "symfony\/expression-language|v7.2.0",
+                "symfony\/http-foundation|v7.2.3"
+            ]
         },
         {
-            "spdxElementId": "SPDXRef-symfony-property-access|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-info|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-event-manager|2.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-enshrined-svg-sanitize|0.20.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-firebase-php-jwt|v6.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-firebase-php-jwt|v6.11.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-guzzle|7.9.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-promises|2.0.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-psr7|2.7.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-factory|1.1.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-psr-http-factory|1.1.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-message|2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-ralouphie-getallheaders|3.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-client|1.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-lolli42-finediff|1.1.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-masterminds-html5|2.9.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-server-handler|1.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-server-middleware|1.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-doctrine-messenger|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mailer|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-uid|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-uid|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-uuid|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-class-alias-loader|v1.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-cli|3.1.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-composer-installers|v5.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-html-sanitizer|v2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3fluid-fluid|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-bacon-bacon-qr-code|v3.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-bacon-bacon-qr-code|v3.0.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-dasprid-enum|1.0.6"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-christian-riesen-base32|1.6.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-annotations|2.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-lexer|3.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-cache|3.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-log|3.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-deprecation-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-service-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-service-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-container|2.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-var-exporter|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-var-exporter|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-access|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-access|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-info|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-event-manager|2.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-enshrined-svg-sanitize|0.20.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-firebase-php-jwt|v6.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-firebase-php-jwt|v6.11.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-guzzle|7.9.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-promises|2.0.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-psr7|2.7.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-factory|1.1.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-psr-http-factory|1.1.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-message|2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-ralouphie-getallheaders|3.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-client|1.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-lolli42-finediff|1.1.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-masterminds-html5|2.9.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-server-handler|1.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-server-middleware|1.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-doctrine-messenger|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mailer|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-uid|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-uid|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-uuid|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-class-alias-loader|v1.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-cli|3.1.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-composer-installers|v5.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-html-sanitizer|v2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-core|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3fluid-fluid|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-bacon-bacon-qr-code|v3.0.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-dasprid-enum|1.0.6"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-lexer|3.0.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-cache|3.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-annotations|2.0.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-log|3.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-deprecation-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-service-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-service-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-container|2.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-var-exporter|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-var-exporter|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-access|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-access|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-info|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-log|3.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-cache-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-deprecation-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-service-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-service-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-container|2.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-cache|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-var-exporter|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-var-exporter|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-access|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-access|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-info|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-service-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-container|2.0.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-var-exporter|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-access|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-access|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-info|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-access|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-property-info|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-string|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-type-info|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-property-info|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-dependency-injection|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-ctype|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-grapheme|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-normalizer|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-string|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-mbstring|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-type-info|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpstan-phpdoc-parser|1.33.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-nikic-php-parser|v5.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpstan-phpdoc-parser|1.33.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-process|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-deprecations|1.1.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-reflection-common|2.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-phpdocumentor-type-resolver|1.10.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-phpdocumentor-reflection-docblock|5.6.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-webmozart-assert|1.11.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-dependency-injection|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-config|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-filesystem|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-config|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-finder|v7.2.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-expression-language|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-http-foundation|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-event-dispatcher-contracts|v3.5.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-event-dispatcher|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-php83|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-dbal|4.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-http-foundation|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-mime|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-doctrine-dbal|4.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-console|v7.2.1"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-console|v7.2.1",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-messenger|v7.2.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-clock|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-rate-limiter|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-messenger|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-routing|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-clock|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-clock|1.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-rate-limiter|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-options-resolver|v7.2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-routing|v7.2.3",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-yaml|v7.2.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-intl-idn|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-mime|v7.2.4",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-egulias-email-validator|4.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-firebase-php-jwt|v6.11.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-guzzle|7.9.2"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-promises|2.0.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-psr7|2.7.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-factory|1.1.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-psr-http-factory|1.1.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-message|2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-ralouphie-getallheaders|3.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-client|1.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-promises|2.0.4"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-guzzlehttp-psr7|2.7.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-factory|1.1.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-psr-http-factory|1.1.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-message|2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-ralouphie-getallheaders|3.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-guzzle|7.9.2",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-client|1.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-factory|1.1.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-psr-http-factory|1.1.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-message|2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-guzzlehttp-psr7|2.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-ralouphie-getallheaders|3.0.3"
-        },
-        {
-            "spdxElementId": "SPDXRef-psr-http-factory|1.1.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-psr-http-message|2.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-symfony-uid|v7.2.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-symfony-polyfill-uuid|v1.31.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-dashboard|13.4.x-dev",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-backend|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-dashboard|13.4.x-dev",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-extbase|v13.4.7"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-extbase|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-instantiator|2.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-dashboard|13.4.x-dev",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-fluid|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-dashboard|13.4.x-dev",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-frontend|v13.4.7"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-extbase|v13.4.7",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-doctrine-instantiator|2.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-bk2k-bootstrap-package|15.0.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-scssphp-scssphp|v1.13.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-extensionmanager|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-install|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-rte-ckeditor|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-seo|v13.4.7"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-belog|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-felogin|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-filelist|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-form|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-indexed-search|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-tstemplate|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-beuser|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-filemetadata|v13.4.7"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-impexp|v13.4.7"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-minimal|v13.4.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-scheduler|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-typo3-cms-introduction|4.7.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-setup|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-scssphp-scssphp|v1.13.0"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-extensionmanager|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-install|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-rte-ckeditor|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-seo|v13.4.7"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-belog|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-felogin|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-filelist|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-form|13.4.x-dev"
-        },
-        {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-indexed-search|13.4.x-dev"
-        },
+            "ref": "symfony\/config|v7.2.3",
+            "dependsOn": [
+                "symfony\/filesystem|v7.2.0",
+                "symfony\/event-dispatcher|v7.2.0",
+                "symfony\/finder|v7.2.2"
+            ]
+        },
+        {
+            "ref": "symfony\/dependency-injection|v7.2.4",
+            "dependsOn": [
+                "symfony\/config|v7.2.3"
+            ]
+        },
+        {
+            "ref": "symfony\/property-info|v7.2.3",
+            "dependsOn": [
+                "symfony\/string|v7.2.0",
+                "symfony\/type-info|v7.2.4",
+                "phpdocumentor\/reflection-docblock|5.6.1",
+                "symfony\/dependency-injection|v7.2.4"
+            ]
+        },
         {
-            "spdxElementId": "SPDXRef-bk2k-bootstrap-package|15.0.0",
-            "relationshipType": "DEPENDS_ON",
-            "relatedSpdxElement": "SPDXRef-typo3-cms-tstemplate|13.4.x-dev"
+            "ref": "symfony\/property-access|v7.2.3",
+            "dependsOn": [
+                "symfony\/property-info|v7.2.3"
+            ]
+        },
+        {
+            "ref": "symfony\/var-exporter|v7.2.4",
+            "dependsOn": [
+                "symfony\/property-access|v7.2.3"
+            ]
+        },
+        {
+            "ref": "symfony\/cache|v7.2.4",
+            "dependsOn": [
+                "psr\/log|3.0.2",
+                "symfony\/cache-contracts|v3.5.1",
+                "symfony\/deprecation-contracts|v3.5.1",
+                "symfony\/service-contracts|v3.5.1",
+                "symfony\/var-exporter|v7.2.4"
+            ]
+        },
+        {
+            "ref": "doctrine\/annotations|2.0.2",
+            "dependsOn": [
+                "doctrine\/lexer|3.0.1",
+                "psr\/cache|3.0.0",
+                "symfony\/cache|v7.2.4"
+            ]
+        },
+        {
+            "ref": "psr\/http-factory|1.1.0",
+            "dependsOn": [
+                "psr\/http-message|2.0"
+            ]
+        },
+        {
+            "ref": "guzzlehttp\/psr7|2.7.0",
+            "dependsOn": [
+                "psr\/http-factory|1.1.0",
+                "ralouphie\/getallheaders|3.0.3"
+            ]
+        },
+        {
+            "ref": "guzzlehttp\/guzzle|7.9.2",
+            "dependsOn": [
+                "guzzlehttp\/promises|2.0.4",
+                "guzzlehttp\/psr7|2.7.0",
+                "psr\/http-client|1.0.3"
+            ]
+        },
+        {
+            "ref": "firebase\/php-jwt|v6.11.0",
+            "dependsOn": [
+                "guzzlehttp\/guzzle|7.9.2"
+            ]
+        },
+        {
+            "ref": "symfony\/uid|v7.2.0",
+            "dependsOn": [
+                "symfony\/polyfill-uuid|v1.31.0"
+            ]
+        },
+        {
+            "ref": "typo3\/cms-core|v13.4.7",
+            "dependsOn": [
+                "bacon\/bacon-qr-code|v3.0.1",
+                "christian-riesen\/base32|1.6.0",
+                "doctrine\/annotations|2.0.2",
+                "doctrine\/event-manager|2.0.1",
+                "enshrined\/svg-sanitize|0.20.0",
+                "firebase\/php-jwt|v6.11.0",
+                "lolli42\/finediff|1.1.1",
+                "masterminds\/html5|2.9.0",
+                "psr\/http-server-handler|1.0.2",
+                "psr\/http-server-middleware|1.0.2",
+                "symfony\/doctrine-messenger|v7.2.3",
+                "symfony\/mailer|v7.2.3",
+                "symfony\/uid|v7.2.0",
+                "typo3\/class-alias-loader|v1.2.0",
+                "typo3\/cms-cli|3.1.2",
+                "typo3\/cms-composer-installers|v5.0.1",
+                "typo3\/html-sanitizer|v2.2.0",
+                "typo3fluid\/fluid|4.0.3"
+            ]
+        },
+        {
+            "ref": "sbominator\/sbom-typo3|dev-main",
+            "dependsOn": [
+                "sbominator\/sbom-lib|dev-main",
+                "typo3\/cms-core|v13.4.7"
+            ]
+        },
+        {
+            "ref": "typo3\/cms-extbase|v13.4.7",
+            "dependsOn": [
+                "doctrine\/instantiator|2.0.0"
+            ]
+        },
+        {
+            "ref": "typo3\/cms-dashboard|13.4.x-dev",
+            "dependsOn": [
+                "typo3\/cms-backend|13.4.x-dev",
+                "typo3\/cms-extbase|v13.4.7",
+                "typo3\/cms-fluid|13.4.x-dev",
+                "typo3\/cms-frontend|v13.4.7"
+            ]
+        },
+        {
+            "ref": "bk2k\/bootstrap-package|15.0.0",
+            "dependsOn": [
+                "scssphp\/scssphp|v1.13.0",
+                "typo3\/cms-extensionmanager|13.4.x-dev",
+                "typo3\/cms-install|13.4.x-dev",
+                "typo3\/cms-rte-ckeditor|13.4.x-dev",
+                "typo3\/cms-seo|v13.4.7",
+                "typo3\/cms-belog|13.4.x-dev",
+                "typo3\/cms-felogin|13.4.x-dev",
+                "typo3\/cms-filelist|13.4.x-dev",
+                "typo3\/cms-form|13.4.x-dev",
+                "typo3\/cms-indexed-search|13.4.x-dev",
+                "typo3\/cms-tstemplate|13.4.x-dev"
+            ]
+        },
+        {
+            "ref": "typo3\/cms-introduction|4.7.0",
+            "dependsOn": [
+                "bk2k\/bootstrap-package|15.0.0",
+                "typo3\/cms-beuser|13.4.x-dev",
+                "typo3\/cms-filemetadata|v13.4.7",
+                "typo3\/cms-impexp|v13.4.7",
+                "typo3\/minimal|v13.4.0",
+                "typo3\/cms-scheduler|13.4.x-dev",
+                "typo3\/cms-setup|13.4.x-dev"
+            ]
         }
     ]
 }
