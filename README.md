@@ -24,3 +24,11 @@ composer req 'SBOMinator/sbom-typo3:@dev'
 Examples of the generated SPDX and CycloneDX file can be found in [Documentation/Examples/](https://github.com/sbominator/sbom-typo3/tree/main/Documentation/Examples)
 
 ![screenshot of SBOM module in TYPO3 backend](Documentation/screenshot-backend-module.png)
+
+## Contributing
+
+please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+
+## License
+
+This project is open source and available under the MIT License.
