@@ -8,13 +8,15 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use SBOMinator\Lib\Dependency;
 use SBOMinator\Lib\Enum\FileType;
+use SBOMinator\Lib\Generator\CycloneDXSBOMGenerator;
+use SBOMinator\Lib\Generator\SpdxSBOMGenerator;
 use SBOMinator\Lib\Scanner\FileScanner;
 use TYPO3\CMS\Backend\Attribute\AsController;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
 use TYPO3\CMS\Backend\Template\Components\ButtonBar;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Core\Environment;
-use TYPO3\CMS\Core\Http\JsonResponse;
+use TYPO3\CMS\Core\Http\Response;
 use TYPO3\CMS\Core\Imaging\IconFactory;
 use TYPO3\CMS\Core\Imaging\IconSize;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
@@ -58,7 +60,7 @@ final readonly class ModuleController
         );
 
         $view->assignMultiple([
-            'flatDependencies' => $this->resolveDependencies(),
+            'flatDependencies' => $this->flattenDependencies(...$this->resolveDependencies()),
         ]);
         return $view->renderResponse('Module/Index');
     }
@@ -66,34 +68,21 @@ final readonly class ModuleController
     public function downloadAction(ServerRequestInterface $request): ResponseInterface
     {
         $format = $request->getQueryParams()['format'] ?? '';
-        if (!is_string($format)
-            || !in_array($format, [FileType::SPDX_SBOM_FILE, FileType::CYCLONEDX_SBOM_FILE], true)
-        ) {
-            $format = FileType::SPDX_SBOM_FILE;
+        $format = is_string($format) ? FileType::tryFrom($format) : null;
+        $format ??= FileType::SPDX_SBOM_FILE;
+
+        $dependencies = $this->resolveDependencies();
+        if ($format === FileType::CYCLONEDX_SBOM_FILE) {
+            $generator = new CycloneDXSBOMGenerator($dependencies);
+        } else {
+            $generator = new SpdxSBOMGenerator($dependencies);
         }
-        // @todo output format is not used yet
-        // @todo this is not a real/valid SBOM output yet
-        $json = [
-            'packages' => array_map(
-                static fn(Dependency $dependency): array => [
-                    'name' => $dependency->getName(),
-                    'versionInfo' => $dependency->getVersion(),
-                    'downloadLocation' => null,
-                    'licenseConcluded' => null,
-                    'externalRefs' => [
-                        'referenceCategory' => 'PACKAGE-MANAGER',
-                        'referenceType' => 'purl',
-                        'referenceLocator' => sprintf(
-                            'pkg:composer:%s@%s',
-                            $dependency->getName(),
-                            $dependency->getVersion()
-                        ),
-                    ],
-                ],
-                $this->resolveDependencies(),
-            )
-        ];
-        return (new JsonResponse($json))
+        $response = new Response();
+        $response->getBody()->write($generator->generate());
+
+        // @todo use stream-emitting-response
+        return $response
+            ->withHeader('Content-Type', 'application/json; charset=utf-8')
             ->withHeader('Content-Disposition', 'attachment; filename=sbom.json');
     }
 
@@ -102,9 +91,7 @@ final readonly class ModuleController
      */
     private function resolveDependencies(): array
     {
-        $scanner = new FileScanner();
-        $dependencies = $scanner->scanForDependencies(Environment::getProjectPath());
-        return $this->flattenDependencies(...$dependencies);
+        return (new FileScanner())->scanForDependencies(Environment::getProjectPath());
     }
 
     /**
