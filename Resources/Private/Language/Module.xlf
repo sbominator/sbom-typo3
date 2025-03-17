@@ -13,8 +13,11 @@
 				<source>SBOM Ovierview</source>
 			</trans-unit>
 
-			<trans-unit id="action.download">
-				<source>Download</source>
+			<trans-unit id="action.download.SPDX">
+				<source>Download SPDX</source>
+			</trans-unit>
+			<trans-unit id="action.download.cycloneDX">
+				<source>Download CycloneDX</source>
 			</trans-unit>
 		</body>
 	</file>

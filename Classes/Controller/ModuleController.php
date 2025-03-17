@@ -7,9 +7,11 @@ namespace SBOMinator\SbomTYPO3\Controller;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use SBOMinator\Lib\Dependency;
+use SBOMinator\Lib\Enum\FileType;
 use SBOMinator\Lib\Scanner\FileScanner;
 use TYPO3\CMS\Backend\Attribute\AsController;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
+use TYPO3\CMS\Backend\Template\Components\ButtonBar;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Http\JsonResponse;
@@ -34,9 +36,25 @@ final readonly class ModuleController
         $buttonBar->addButton(
             $buttonBar->makeLinkButton()
                 ->setIcon($this->iconFactory->getIcon('actions-download', IconSize::SMALL))
-                ->setTitle(LocalizationUtility::translate('LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf:action.download', 'sbom_typo3'))
+                ->setTitle(LocalizationUtility::translate('LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf:action.download.SPDX', 'sbom_typo3'))
                 ->setShowLabelText(true)
-                ->setHref((string)$this->uriBuilder->buildUriFromRoute('sbom_download', []))
+                ->setHref((string)$this->uriBuilder->buildUriFromRoute('sbom_download', [
+                    'format' => FileType::SPDX_SBOM_FILE,
+                ])),
+            ButtonBar::BUTTON_POSITION_LEFT,
+            1
+        );
+
+        $buttonBar->addButton(
+            $buttonBar->makeLinkButton()
+                ->setIcon($this->iconFactory->getIcon('actions-download', IconSize::SMALL))
+                ->setTitle(LocalizationUtility::translate('LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf:action.download.cycloneDX', 'sbom_typo3'))
+                ->setShowLabelText(true)
+                ->setHref((string)$this->uriBuilder->buildUriFromRoute('sbom_download', [
+                    'format' => FileType::CYCLONEDX_SBOM_FILE,
+                ])),
+            ButtonBar::BUTTON_POSITION_LEFT,
+            2
         );
 
         $view->assignMultiple([
@@ -47,6 +65,13 @@ final readonly class ModuleController
 
     public function downloadAction(ServerRequestInterface $request): ResponseInterface
     {
+        $format = $request->getQueryParams()['format'] ?? '';
+        if (!is_string($format)
+            || !in_array($format, [FileType::SPDX_SBOM_FILE, FileType::CYCLONEDX_SBOM_FILE], true)
+        ) {
+            $format = FileType::SPDX_SBOM_FILE;
+        }
+        // @todo output format is not used yet
         // @todo this is not a real/valid SBOM output yet
         $json = [
             'packages' => array_map(

@@ -8,6 +8,7 @@ return [
     'sbom_module' => [
         'parent' => 'system',
         'access' => 'admin',
+        'position' => ['before' => '*'],
         'path' => '/module/system/sbom',
         'icon' => 'EXT:sbom_typo3/Resources/Public/Icons/Extension.svg',
         'labels' => 'LLL:EXT:sbom_typo3/Resources/Private/Language/Module.xlf',
